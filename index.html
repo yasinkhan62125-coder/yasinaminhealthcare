@@ -34,9 +34,8 @@
   <header class="sticky top-0 z-40 bg-white/95 backdrop-blur shadow-sm">
     <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
       <a href="#home" class="shrink-0 flex items-center gap-3">
-        <div id="site-logo-container" class="h-12 w-12 bg-blue-900 text-white rounded-lg flex items-center justify-center font-bold text-xl overflow-hidden">
-          <img id="site-logo-display" src="" alt="Logo" class="w-full h-full object-cover hidden">
-          <span id="site-logo-text">YA</span>
+        <div class="h-12 w-12 bg-blue-900 text-white rounded-lg flex items-center justify-center font-bold text-xl overflow-hidden">
+          <span class="font-bold">YA</span>
         </div>
         <div>
           <span class="block font-bold text-lg leading-tight text-blue-950">Yasin Amin</span>
@@ -94,14 +93,15 @@
           <div>
             <div class="mb-5 flex justify-center">
               <div class="w-24 h-24 rounded-full bg-blue-200 border-2 border-blue-600 overflow-hidden flex items-center justify-center text-blue-800 font-bold text-2xl shadow-inner">
-                <img id="yasin-img-display" src="" alt="Yasin Amin" class="w-full h-full object-cover hidden">
-                <span id="yasin-initials">YA</span>
+                <!-- یہاں اپنی تصویر کا نام لکھیں جو آپ گٹ ہب میں اپ لوڈ کریں گے، مثلا yasin.jpg -->
+                <img src="yasin.jpg" alt="Yasin Amin" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span style="display:none;">YA</span>
               </div>
             </div>
-            <h3 id="display-yasin-name" class="text-2xl font-bold text-blue-950 text-center mb-1">Yasin Amin</h3>
+            <h3 class="text-2xl font-bold text-blue-950 text-center mb-1">Yasin Amin</h3>
             <p class="text-blue-700 font-semibold text-sm text-center mb-4">AHPC-Registered Medical Laboratory Technologist (BS MLT)</p>
             
-            <p id="display-yasin-desc" class="text-slate-700 text-sm leading-relaxed mb-6 text-center italic bg-white p-4 rounded-xl border border-blue-100 shadow-sm">
+            <p class="text-slate-700 text-sm leading-relaxed mb-6 text-center italic bg-white p-4 rounded-xl border border-blue-100 shadow-sm">
               "As an AHPC-registered Medical Laboratory Technologist, Yasin Amin is dedicated to providing safe, hygienic, and dependable healthcare services directly at your doorstep. Specializing in home diagnostic sample collection (phlebotomy), IV drips, cannulation, wound care, and nursing support, he ensures accurate clinical procedures and seamless patient coordination while maintaining strict medical standards and patient dignity."
             </p>
 
@@ -126,14 +126,15 @@
           <div>
             <div class="mb-5 flex justify-center">
               <div class="w-24 h-24 rounded-full bg-slate-200 border-2 border-slate-600 overflow-hidden flex items-center justify-center text-slate-700 font-bold text-2xl shadow-inner">
-                <img id="zahid-img-display" src="" alt="Dr. Zahid Khan" class="w-full h-full object-cover hidden">
-                <span id="zahid-initials">ZK</span>
+                <!-- یہاں ڈاکٹر صاحب کی تصویر کا نام لکھیں جو آپ گٹ ہب میں اپ لوڈ کریں گے، مثلا zahid.jpg -->
+                <img src="zahid.jpg" alt="Dr. Zahid Khan" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span style="display:none;">ZK</span>
               </div>
             </div>
-            <h3 id="display-zahid-name" class="text-2xl font-bold text-blue-950 text-center mb-1">Dr. Zahid Khan</h3>
+            <h3 class="text-2xl font-bold text-blue-950 text-center mb-1">Dr. Zahid Khan</h3>
             <p class="text-emerald-700 font-semibold text-sm text-center mb-2">MBBS (AMC), RMP, MCPS (Medicine), FCPS-II (SPR Nephrology)</p>
             
-            <p id="display-zahid-desc" class="text-slate-700 text-sm leading-relaxed mb-6 text-center italic bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+            <p class="text-slate-700 text-sm leading-relaxed mb-6 text-center italic bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
               "Dr. Zahid Khan is listed as a medical professional for clinical consultation requests. Patients may contact us to enquire about consultation arrangements and availability."
             </p>
 
@@ -155,7 +156,7 @@
     </div>
   </section>
 
-  <!-- Services Section (4 Cards including Lab Sample Collection & IV Drips) -->
+  <!-- Services Section -->
   <section id="services" class="py-16 sm:py-20 bg-slate-50 section-anchor">
     <div class="max-w-7xl mx-auto px-4">
       <div class="text-center max-w-2xl mx-auto mb-12">
@@ -164,7 +165,7 @@
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         
-        <!-- Card 1: Laboratory Sample Collection -->
+        <!-- Card 1 -->
         <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm service-card">
           <div class="w-12 h-12 bg-indigo-100 text-indigo-700 rounded-xl flex items-center justify-center mb-5 text-xl font-bold">
             <i class="fa-solid fa-vial"></i>
@@ -173,7 +174,7 @@
           <p class="text-slate-600 text-sm leading-relaxed">Hygienic blood and diagnostic sample collection (Phlebotomy) from your home by an AHPC-registered Lab Technologist.</p>
         </div>
 
-        <!-- Card 2: IV Drips, Cannulation & Wound Care -->
+        <!-- Card 2 -->
         <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm service-card">
           <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center mb-5 text-xl font-bold">
             <i class="fa-solid fa-syringe"></i>
@@ -182,7 +183,7 @@
           <p class="text-slate-600 text-sm leading-relaxed">Safe intravenous (IV) drip administration, cannula insertion, injections, and sterile wound dressing at home.</p>
         </div>
 
-        <!-- Card 3: Nursing-Related Care -->
+        <!-- Card 3 -->
         <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm service-card">
           <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center mb-5 text-xl font-bold">
             <i class="fa-solid fa-user-nurse"></i>
@@ -191,7 +192,7 @@
           <p class="text-slate-600 text-sm leading-relaxed">Dependable bedside nursing support, vital signs monitoring, and elderly care respecting patient dignity.</p>
         </div>
 
-        <!-- Card 4: Patient & Clinical Coordination -->
+        <!-- Card 4 -->
         <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm service-card">
           <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-xl flex items-center justify-center mb-5 text-xl font-bold">
             <i class="fa-solid fa-handshake-angle"></i>
@@ -204,7 +205,7 @@
     </div>
   </section>
 
-  <!-- Footer / Contact Section -->
+  <!-- Footer -->
   <footer id="contact" class="bg-blue-950 text-white py-12 section-anchor">
     <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       <div>
@@ -223,245 +224,8 @@
     </div>
     <div class="max-w-7xl mx-auto px-4 mt-8 pt-6 border-t border-blue-900 text-center text-xs text-slate-400 flex flex-col sm:flex-row justify-between items-center gap-2">
       <p>&copy; 2026 Yasin Amin Health Care &amp; Medical Services. All rights reserved.</p>
-      <button onclick="openAdminModal()" class="text-slate-500 hover:text-slate-300 text-xs underline cursor-pointer bg-transparent border-none">Admin Login</button>
     </div>
   </footer>
-
-  <!-- Hidden Admin Popup Modal -->
-  <div id="admin-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden flex items-center justify-center px-4">
-    <div class="bg-slate-900 text-white p-6 sm:p-8 rounded-2xl border border-slate-800 shadow-2xl max-w-md w-full relative">
-      <button onclick="closeAdminModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg font-bold">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-
-      <!-- Login Form View -->
-      <div id="modal-login-box">
-        <h3 class="text-xl font-bold mb-2 flex items-center gap-2 text-amber-400">
-          <i class="fa-solid fa-lock"></i> Admin Portal Login
-        </h3>
-        <p class="text-xs text-slate-400 mb-5">Enter your authorized email and password to access the website editor.</p>
-        <div id="modal-login-error" class="hidden mb-3 p-2 bg-rose-500/20 border border-rose-500 text-rose-300 text-xs rounded">
-          Incorrect Email or Password!
-        </div>
-        <form onsubmit="handleModalLogin(event)" class="space-y-4">
-          <div>
-            <label class="block text-xs font-medium text-slate-300 mb-1">Email Address</label>
-            <input type="email" id="modal-admin-email" required class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-amber-400" placeholder="yasinkhan62125@gmail.com">
-          </div>
-          <div>
-            <label class="block text-xs font-medium text-slate-300 mb-1">Password</label>
-            <input type="password" id="modal-admin-pass" required class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-amber-400" placeholder="••••••••">
-          </div>
-          <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-2.5 rounded-lg text-sm transition-colors cursor-pointer">
-            Login to Editor
-          </button>
-        </form>
-      </div>
-
-      <!-- Live Dashboard Editor (Hidden until login) -->
-      <div id="modal-editor-box" class="hidden max-h-[80vh] overflow-y-auto pr-1">
-        <div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-800 sticky top-0 bg-slate-900 py-2">
-          <h3 class="text-base font-bold text-emerald-400 flex items-center gap-2">
-            <i class="fa-solid fa-sliders"></i> Website Live Editor
-          </h3>
-          <button onclick="handleLogout()" class="text-xs text-rose-400 hover:text-rose-300 font-semibold cursor-pointer">Logout</button>
-        </div>
-        <form onsubmit="saveChanges(event)" class="space-y-3 text-xs">
-          <div>
-            <label class="block font-medium text-slate-300 mb-1">Website Logo Image</label>
-            <input type="file" id="edit-logo-file" accept="image/*" class="w-full bg-slate-800 border border-slate-700 rounded px-3 py-2 text-white file:mr-4 file:py-1 file:px-2 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-amber-500 file:text-slate-950 hover:file:bg-amber-400">
-          </div>
-          <hr class="border-slate-800 my-2">
-          <div>
-            <label class="block font-medium text-slate-300 mb-1">Yasin Amin Name</label>
-            <input type="text" id="edit-yasin-name" class="w-full bg-slate-800 border border-slate-700 rounded px-3 py-2 text-white">
-          </div>
-          <div>
-            <label class="block font-medium text-slate-300 mb-1">Yasin Amin Description</label>
-            <textarea id="edit-yasin-desc" rows="4" class="w-full bg-slate-800 border border-slate-700 rounded px-3 py-2 text-white"></textarea>
-          </div>
-          <div>
-            <label class="block font-medium text-slate-300 mb-1">Yasin Amin Picture Upload</label>
-            <input type="file" id="edit-yasin-file" accept="image/*" class="w-full bg-slate-800 border border-slate-700 rounded px-3 py-2 text-white file:mr-4 file:py-1 file:px-2 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-amber-500 file:text-slate-950 hover:file:bg-amber-400">
-          </div>
-          <hr class="border-slate-800 my-2">
-          <div>
-            <label class="block font-medium text-slate-300 mb-1">Dr. Zahid Khan Name</label>
-            <input type="text" id="edit-zahid-name" class="w-full bg-slate-800 border border-slate-700 rounded px-3 py-2 text-white">
-          </div>
-          <div>
-            <label class="block font-medium text-slate-300 mb-1">Dr. Zahid Khan Description</label>
-            <textarea id="edit-zahid-desc" rows="3" class="w-full bg-slate-800 border border-slate-700 rounded px-3 py-2 text-white"></textarea>
-          </div>
-          <div>
-            <label class="block font-medium text-slate-300 mb-1">Dr. Zahid Khan Picture Upload</label>
-            <input type="file" id="edit-zahid-file" accept="image/*" class="w-full bg-slate-800 border border-slate-700 rounded px-3 py-2 text-white file:mr-4 file:py-1 file:px-2 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-amber-500 file:text-slate-950 hover:file:bg-amber-400">
-          </div>
-          <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 rounded text-sm cursor-pointer mt-2">
-            Save & Update Website
-          </button>
-        </form>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- JavaScript for Image Uploads & Editor -->
-  <script>
-    const correctEmail = "yasinkhan62125@gmail.com";
-    const correctPass = "yasin2026";
-
-    function openAdminModal() {
-      document.getElementById('admin-modal').classList.remove('hidden');
-      if(sessionStorage.getItem('isAdminLoggedIn') === 'true') {
-        document.getElementById('modal-login-box').classList.add('hidden');
-        document.getElementById('modal-editor-box').classList.remove('hidden');
-      } else {
-        document.getElementById('modal-login-box').classList.remove('hidden');
-        document.getElementById('modal-editor-box').classList.add('hidden');
-      }
-    }
-
-    function closeAdminModal() {
-      document.getElementById('admin-modal').classList.add('hidden');
-    }
-
-    window.addEventListener('DOMContentLoaded', () => {
-      // Load saved texts
-      if(localStorage.getItem('yasin_name')) {
-        document.getElementById('display-yasin-name').innerText = localStorage.getItem('yasin_name');
-        document.getElementById('edit-yasin-name').value = localStorage.getItem('yasin_name');
-      } else {
-        document.getElementById('edit-yasin-name').value = "Yasin Amin";
-      }
-
-      if(localStorage.getItem('yasin_desc')) {
-        document.getElementById('display-yasin-desc').innerText = `"${localStorage.getItem('yasin_desc')}"`;
-        document.getElementById('edit-yasin-desc').value = localStorage.getItem('yasin_desc');
-      } else {
-        document.getElementById('edit-yasin-desc').value = "As an AHPC-registered Medical Laboratory Technologist, Yasin Amin is dedicated to providing safe, hygienic, and dependable healthcare services directly at your doorstep. Specializing in home diagnostic sample collection (phlebotomy), IV drips, cannulation, wound care, and nursing support, he ensures accurate clinical procedures and seamless patient coordination while maintaining strict medical standards and patient dignity.";
-      }
-
-      if(localStorage.getItem('zahid_name')) {
-        document.getElementById('display-zahid-name').innerText = localStorage.getItem('zahid_name');
-        document.getElementById('edit-zahid-name').value = localStorage.getItem('zahid_name');
-      } else {
-        document.getElementById('edit-zahid-name').value = "Dr. Zahid Khan";
-      }
-
-      if(localStorage.getItem('zahid_desc')) {
-        document.getElementById('display-zahid-desc').innerText = `"${localStorage.getItem('zahid_desc')}"`;
-        document.getElementById('edit-zahid-desc').value = localStorage.getItem('zahid_desc');
-      } else {
-        document.getElementById('edit-zahid-desc').value = "Dr. Zahid Khan is listed as a medical professional for clinical consultation requests. Patients may contact us to enquire about consultation arrangements and availability.";
-      }
-
-      // Load saved images
-      if(localStorage.getItem('site_logo')) {
-        const logoImg = document.getElementById('site-logo-display');
-        logoImg.src = localStorage.getItem('site_logo');
-        logoImg.classList.remove('hidden');
-        document.getElementById('site-logo-text').classList.add('hidden');
-      }
-
-      if(localStorage.getItem('yasin_img')) {
-        const yImg = document.getElementById('yasin-img-display');
-        yImg.src = localStorage.getItem('yasin_img');
-        yImg.classList.remove('hidden');
-        document.getElementById('yasin-initials').classList.add('hidden');
-      }
-
-      if(localStorage.getItem('zahid_img')) {
-        const zImg = document.getElementById('zahid-img-display');
-        zImg.src = localStorage.getItem('zahid_img');
-        zImg.classList.remove('hidden');
-        document.getElementById('zahid-initials').classList.add('hidden');
-      }
-    });
-
-    function handleModalLogin(e) {
-      e.preventDefault();
-      const email = document.getElementById('modal-admin-email').value.trim();
-      const pass = document.getElementById('modal-admin-pass').value.trim();
-
-      if(email === correctEmail && pass === correctPass) {
-        sessionStorage.setItem('isAdminLoggedIn', 'true');
-        document.getElementById('modal-login-box').classList.add('hidden');
-        document.getElementById('modal-editor-box').classList.remove('hidden');
-        document.getElementById('modal-login-error').classList.add('hidden');
-      } else {
-        document.getElementById('modal-login-error').classList.remove('hidden');
-      }
-    }
-
-    function handleLogout() {
-      sessionStorage.removeItem('isAdminLoggedIn');
-      document.getElementById('modal-editor-box').classList.add('hidden');
-      document.getElementById('modal-login-box').classList.remove('hidden');
-    }
-
-    function saveChanges(e) {
-      e.preventDefault();
-      
-      const yName = document.getElementById('edit-yasin-name').value;
-      const yDesc = document.getElementById('edit-yasin-desc').value;
-      const zName = document.getElementById('edit-zahid-name').value;
-      const zDesc = document.getElementById('edit-zahid-desc').value;
-
-      localStorage.setItem('yasin_name', yName);
-      localStorage.setItem('yasin_desc', yDesc);
-      localStorage.setItem('zahid_name', zName);
-      localStorage.setItem('zahid_desc', zDesc);
-
-      const logoFile = document.getElementById('edit-logo-file').files[0];
-      const yFile = document.getElementById('edit-yasin-file').files[0];
-      const zFile = document.getElementById('edit-zahid-file').files[0];
-
-      let pendingReads = 0;
-      let checkDone = () => {
-        pendingReads--;
-        if(pendingReads === 0) {
-          alert('Website successfully updated with new images and text!');
-          location.reload();
-        }
-      };
-
-      if(logoFile) {
-        pendingReads++;
-        const reader = new FileReader();
-        reader.onload = function(uploadEvent) {
-          localStorage.setItem('site_logo', uploadEvent.target.result);
-          checkDone();
-        };
-        reader.readAsDataURL(logoFile);
-      }
-
-      if(yFile) {
-        pendingReads++;
-        const reader = new FileReader();
-        reader.onload = function(uploadEvent) {
-          localStorage.setItem('yasin_img', uploadEvent.target.result);
-          checkDone();
-        };
-        reader.readAsDataURL(yFile);
-      }
-
-      if(zFile) {
-        pendingReads++;
-        const reader = new FileReader();
-        reader.onload = function(uploadEvent) {
-          localStorage.setItem('zahid_img', uploadEvent.target.result);
-          checkDone();
-        };
-        reader.readAsDataURL(zFile);
-      }
-
-      if(pendingReads === 0) {
-        alert('Website successfully updated!');
-        location.reload();
-      }
-    }
-  </script>
 
 </body>
 </html>
